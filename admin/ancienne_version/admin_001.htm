@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>collants.fr</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="/include/collants_styles_admin.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+// Script Horloge
+// Copyright Frank Milard - http://www.asaisir.com/a-la-page
+// Vous pouvez utiliser ou modifier ce script librement
+// sous reserve de laisser le copyright visible
+
+HorlogeD1Color="red";
+
+NS4 = IE4 = VERSION4 = 0;
+
+function HorlogeD1Init () {
+        if (VERSION4) {
+		var str ='<DIV ID=HorlogeD1N2><FONT CLASS=HD1 FACE="Arial,Helvetica"><B ID=HorlogeD1N3>'+"12:12:30"+'</B></FONT></DIV>';
+		if (NS4) {
+			HorlogeD1Obj = document.HorlogeD1N1;
+			HorlogeD1Write (str);
+			HorlogeD1Obj.visibility="show";
+			HorlogeD1Obj = HorlogeD1Obj.document.HorlogeD1N2;
+			HorlogeD1Obj.left = (79 - HorlogeD1Obj.document.width)/2;
+			HorlogeD1Obj.top  = (10 - HorlogeD1Obj.document.height)/2;
+		}
+		if (IE4) {
+			HorlogeD1Obj = document.all.HorlogeD1N1;
+			HorlogeD1Write (str);
+			HorlogeD1Obj.style.visibility = "visible";
+			HorlogeD1Obj = document.all.HorlogeD1N2;
+			HorlogeD1Obj.style.left = (79 - document.all.HorlogeD1N3.offsetWidth)/2;
+			HorlogeD1Obj.style.top  = (10 - document.all.HorlogeD1N3.offsetHeight)/2;
+		}
+		HorlogeD1ChangeString();
+		HorlogeD1Timer1 = setInterval("HorlogeD1ChangeString()",1000);
+	}
+}
+
+NS4 = (document.layers) ? 1 : 0;
+IE4 = (document.all) ? 1 : 0;
+VERSION4 = (NS4|IE4) ? 1 : 0;
+
+//   Recharger la page en cas de redimensionnement (NS4 uniquement)
+if(NS4){oW=innerWidth;oH=innerHeight;onresize=function(){if(innerWidth!=oW||innerHeight!=oH)location.reload()}}
+
+function HorlogeD1ChangeString (flag) {
+	var date_cour = new Date();
+	//var am = ' AM';
+	var heures = date_cour.getHours();
+	//if (heures > 12) {
+		//heures -= 12;
+		//am =' PM';
+	//}
+	var minutes  = date_cour.getMinutes() < 10 ? ":0"+date_cour.getMinutes() : ":" + date_cour.getMinutes();
+	var secondes = date_cour.getSeconds() < 10 ? ":0"+date_cour.getSeconds() : ":" + date_cour.getSeconds();
+
+	HorlogeD1Write ('<FONT CLASS=HD1 FACE="Arial,Helvetica" COLOR="'+HorlogeD1Color+'" ><B>'+heures+minutes+'</B></FONT>');
+}
+
+function HorlogeD1Write (str) {
+	if (NS4) {
+		with (HorlogeD1Obj.document) {
+			write(str);
+			close();
+		}
+	}
+	if (IE4) HorlogeD1Obj.innerHTML = str;
+}
+</script>
+</head>
+
+<body leftmargin="5" topmargin="5" id="fond_gris" onload="HorlogeD1Init();">
+<table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+	<td align="center">
+			<table width="980" height="650" border="0"  cellpadding="0" cellspacing="0" background="images/admin2.gif" id="border1">
+			  <tr>
+			    <td align="left" valign="top">
+					<table width="100%" height="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+			        <tr>
+			          <td width="160" align="left" valign="top">
+					  	<table width="100%" border="0" cellspacing="0" cellpadding="5">
+			              <tr>
+			                <td><img src="images/pixel_transparent.gif" width="10" height="10"></td>
+			                <td width="100%">
+								<table width="163" border="0" cellspacing="0" cellpadding="5">
+			                    <tr> 
+			                      <td width="153"><img src="images/pixel_transparent.gif" width="45" height="45"></td>
+			                    </tr>
+			                    <tr> 
+			                      <td id="texte2_rouge">Gestion Produits</td>
+			                    </tr>
+			                    <tr> 
+			                      <td><a id="menu" href="collants.htm"><span id="crochet_menu">[</span> 
+			                        Produit</a></td>
+			                    </tr>
+			                    <tr> 
+			                      <td><a id="menu" href="collants.htm"><span id="crochet_menu">[</span> 
+			                        Marque</a></td>
+			                    </tr>
+			                    <tr> 
+			                      <td><a id="menu" href="collants.htm"><span id="crochet_menu">[</span> 
+			                        Couleur</a></td>
+			                    </tr>
+			                    <tr> 
+			                      <td><a id="menu" href="collants.htm"><span id="crochet_menu">[</span> 
+			                        Taille</a></td>
+			                    </tr>
+			                    <tr> 
+			                      <td><a id="menu" href="collants.htm"><span id="crochet_menu">[</span> 
+			                        Cat&eacute;gorie</a></td>
+			                    </tr>
+			                    <tr> 
+			                      <td>&nbsp;</td>
+			                    </tr>
+			                    <tr> 
+			                      <td id="texte2_rouge">Gestion Clients</td>
+			                    </tr>
+			                    <tr> 
+			                      <td><a id="menu" href="collants.htm"><span id="crochet_menu">[</span> 
+			                        Commandes</a></td>
+			                    </tr>
+			                    <tr> 
+			                      <td><a id="menu" href="collants.htm"><span id="crochet_menu">[</span> 
+			                        Codes remise</a></td>
+			                    </tr>
+			                    <tr> 
+			                      <td>&nbsp;</td>
+			                    </tr>
+			                    <tr> 
+			                      <td id="texte2_rouge">Marketing</td>
+			                    </tr>
+			                    <tr> 
+			                      <td><a id="menu" href="collants.htm"><span id="crochet_menu">[</span> 
+			                        Newsletter</a></td>
+			                    </tr>
+			                    <tr> 
+			                      <td><a id="menu" href="collants.htm"><span id="crochet_menu">[</span> 
+			                        Actions / Accueil</a></td>
+			                    </tr>
+			                    <tr> 
+			                      <td><a id="menu" href="collants.htm"><span id="crochet_menu">[</span> 
+			                        Vente flash</a></td>
+			                    </tr>
+			                    <tr> 
+			                      <td><a id="menu" href="collants.htm"><span id="crochet_menu">[</span> 
+			                        Livre d'or</a></td>
+			                    </tr>
+			                    <tr> 
+			                      <td>&nbsp;</td>
+			                    </tr>
+			                    <tr> 
+			                      <td>&nbsp;</td>
+			                    </tr>
+			                    <tr> 
+			                      <td><a id="menu" href="mailto:marcus@ruhrmann.fr"><span id="crochet_menu">[</span> 
+			                        help me</a></td>
+			                    </tr>
+								
+								 <tr> 
+			                      <td>&nbsp;</td>
+			                    </tr>
+			                    <tr> 
+			                      <td>&nbsp;</td>
+			                    </tr>
+								 <tr> 
+			                      <td><a id="menu" href="mailto:marcus@ruhrmann.fr"><span id="crochet_menu">[</span> 
+			                        Deconnexion
+			                  </table>
+							 </td>
+			              </tr>
+			            </table></td>
+			          <td width="91%" align="left" valign="top">
+					  	<table width="663" border="0" cellspacing="0" cellpadding="5">
+			              <tr>
+			                <td width="653" height="40"><table width="100%" border="0" cellspacing="0" cellpadding="5">
+			                    <tr>
+			                      <td width="20%">&nbsp;</td>
+			                      <td width="21%">&nbsp;</td>
+			                      <td width="59%">&nbsp;</td>
+			                    </tr>
+			                    <tr>
+									<td id="texte2_rouge">Date :</td>
+									<td>
+										<table cellspacing="2" cellpadding="2" border="0">
+										<tr>
+											<td id="texte2_rouge">Heure :</td>
+											<td id="texte2_rouge"><DIV ID=HorlogeD1N1></DIV></td>
+										</tr>
+										</table>
+
+									</td>
+			                      
+			                    </tr>
+			                  </table></td>
+			              </tr>
+			              <tr>
+			                <td width="760" height="470" align="left" valign="top">
+							<iframe src="admin_colori.htm" id="border1" name="panier" scrolling="auto" width="760" marginleft="0" height="550" topmargin="0" align="top" valign="left" frameborder="0" ></iframe>
+							</td>
+			              </tr>
+			            </table>
+						</td>
+			        </tr>
+			      </table>
+				  </td>
+			  </tr>
+	</table>
+	</td>
+</tr>
+</table>
+</body>
+</html>
